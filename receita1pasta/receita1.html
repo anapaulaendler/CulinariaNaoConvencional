@@ -9,6 +9,8 @@
 
     <style>
 
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+
         body {
             background: #FFFBF5;
             margin: 0px;
@@ -16,14 +18,12 @@
             border: 0;
             font-size: 15px;
         }
-
         #outer-wrapper {
             width: 850px;
             margin: 0 auto;
             padding: 0;
             text-align: center;
         }
-
         #header {
             background-color: #674188;
             position: sticky;
@@ -31,14 +31,17 @@
             padding: 10px;
             text-align:center;
         }
-
-        #header p, h1, a {
-            color: #ffffff;
+        h1, h2 {
+            font-family: 'Yeseva One', cursive;
+            color:#674188;
         }
-
+        p, a, span {
+            color: #FFFBF5;
+            font-family: 'Josefin Sans', sans-serif;
+        }
         h1.prato {
             font-size: 40px;
-            color: purple;
+            color:#674188;
         }
 
         #icon {
@@ -55,42 +58,47 @@
             border: 2px #674188 solid;
         }
 
-        span.escritareceita {
-            position: absolute; 
-            padding-top: 20px;
-        }
-
-        div.itens {
-            padding-top: 10px;
-            padding-right: 35px;
+        .itens {
+            background-color: #C3ACD0;
+            padding: 10px;
+            border-radius: 4px;
         }
 
         div.divisor {
-            background-color: purple;
+            background-color: #674188;
             width: 100%;
-            height: 10px;
+            height: 5px;
+            border-radius: 2px;
         }
 
-        h1.abaixo {
-            color: black;
+        .abaixo {
+            color: #674188;
             font-size: 20px;
         }
 
-        div.ingredientes {
-            text-align: left;
-            margin-left: 20%;
-        }
-
-        div.passoapasso {
-            text-align: left;
-            margin-left: 20%;
+        .conteudo {
+            width: 500px;
+            text-align: left; 
+            margin: auto;
+            padding: 5px;
+            background-color: #C3ACD0;
+            border-radius: 4px;
+            line-height: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#674188;
         }
 
         img.comentarios {
             border-radius: 50%;
-            height: 60px;
-            margin-right: 85%;
-            margin-top: 20px;
+            height: 70px;
+            float: left;
+        }
+
+        .icones {
+            float: inline-start;
+            height: 15px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
 
     </style>
@@ -107,55 +115,54 @@
     </div>
 
     <div id="outer-wrapper">
+
         <img class="bordinha" src="Screenshot_851.png">
 
         <h1 class="prato">A MORTE DELA (MORTADELA)</h1>
 
-            <div style="background-color: rgb(194, 194, 194); width: 370px; height: 70px; align-items: center; margin: auto; width: 50%;"> 
+            <div style="width: 370px; height: 70px; align-items: center; margin: auto;"> 
                 <div class="itens">
-                    <img style="width: 43px;" src="relogiopng.png">
-                    <span class="escritareceita">120 HORAS</span>
-                    <img style="width: 50px; padding-left: 100px" src="estrelapng.png">
-                    <span class="escritareceita">4,5/5</span>
-                    <img style="width: 50px; padding-left: 50px" src="caverapng.png">
-                    <span class="escritareceita">100%</span>
+                    <p style="font-family: 'Yeseva One';">
+                    <img class="icones" src="relogiopng.png">
+                    120 HORAS  
+                    <img class="icones" src="https://i.pinimg.com/originals/78/65/8d/78658d3b6047f1bbb27f8a45c62b0b0e.png">
+                    4,5/5  
+                    <img class="icones" src="caverapng.png">
+                    100%  
+                    </p>
                 </div>
             </div>
 
-        <P>Por: GEULCIMAR BRILHOSO BRILHANTE PIRIRIRIMPUPLIN</P>
+        <p style="color:#674188;">Por: Rebeca</p>
 
         <div class="divisor"></div>
 
         <h1 class="abaixo">INGREDINHENTES:</h1>
 
-        <div class="ingredientes">
-            <input type="checkbox" checked="checked">BANANA<br>
-            <input type="checkbox" checked="checked">ROMA
+        <div class="conteudo">
+            <input type="checkbox" checked="checked">Banana<br>
+            <input type="checkbox" checked="checked">Romã
         </div>
 
-        <div class="divisor" style="margin-top: 20px"></div>
+        <div class="divisor" style="margin-top: 20px;"></div>
         
         <h1 class="abaixo">PASSO A PASSO</h1>
 
-        <div class="passoapasso">
-            <p>1. RARARARA</p>
-            <p>2. HEHEHEHE</p>
-            <p>3. HIHIHIHI</p>
-            <p>4. PRONTIO!</p>
+        <div class="conteudo">
+            <p style="color:#674188;">1. Primeiramente, roube 26 romãs, e dê um beijinho na bochecha do padre.<br>
+            2. Escute suas músicas favoritas! Lorem ipsum! a a a a a a a a a a aa aa a a a a a aa a a a a a a a a</p>
         </div>
 
-        <div class="divisor"></div>
+        <div class="divisor" style="margin-top: 20px;"></div>
 
         <h1 class="abaixo">COMENTÁRIOS</h1>
 
         
 
-        <div style="background-color: rgb(194, 194, 194); height: 150px; width: 700px; margin: auto; align-items: center">
-            <img class="comentarios" src="Screenshot_852.png">
-            <span style="font-size: 20px">Rafael Abaptistella:</span>
+        <div style="background-color: #C3ACD0; height: 150px; width: 700px; margin: auto; padding:10px; border-radius: 4px;">
+            <img class="comentarios" src="https://pbs.twimg.com/media/E27Ix1gWYAEYNy5.jpg">
+            <span style="font-size: 25px; font-family:'Yeseva One'; color:#674188; text-align: left;">Rafael Abaptistella:</span>
         </div>
-
-        
     </div>
 
 </body>
