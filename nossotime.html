@@ -39,9 +39,14 @@
             color:#674188;;
         }
 
-        p, a, span {
+        p, span {
             color: #FFFBF5;
             font-family: 'Josefin Sans', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color:#674188;
         }
 
         #icon {
@@ -103,16 +108,69 @@
             font-size:17px;
         }
 
+        button {
+            text-decoration: none;
+            background-color: #674188;
+            border: none;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#FFFBF5;
+            font-size: 15px;
+        }
+
+        .receitas-container {
+        position: relative;
+        display: inline-block;
+        }
+
+        .receitas-button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 15px;
+        }
+
+        .receitas {
+        position: absolute;
+        display: none;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        background-color: #FFFBF5;
+        }
+
+        .receitas li {
+        margin-bottom: 10px;
+        }
+
+        .receitas a {
+        text-decoration: none;
+        color: #674188;
+        font-size: 15px;
+        }
+
+
     </style>
 </head>
 
 <body>
 
     <div id="header">
-        <img style="float:left;width:60px;" src="https://cdn-icons-png.flaticon.com/512/857/857681.png">
+        <img style="float:left;height:100px;" src="https://i.postimg.cc/sxpN6vYp/logooo-Photo-Room-png-Photo-Room.png">
         <h1 style="color:#FFFBF5;">PANELA SINGELA</h1>
         <div id="menuNav">
-            <p>página inicial | receitas | nosso time | usuário | registro | log in</p>
+            <span style="color: #FFFBF5;font-family: 'Josefin Sans', sans-serif;font-size: 15px;">
+                <a style="color:#FFFBF5;" href="index.html">página inicial</a> | 
+                <div class="receitas-container">
+                    <button id="toggleReceitas" class="receitas-button">receitas</button>
+                    <ul id="receitas" class="receitas">
+                      <li><a href="receitas/rollmops.html">Rollmops</a></li>
+                      <li><a href="receitas/mortadela.html">Mortadela</a></li>
+                      <li><a href="receitas/cabelo.html">Tempero Especial</a></li>
+                    </ul>
+                  </div>
+                | 
+                <a style="color:#FFFBF5;" href="nossotime.html">nosso time</a>
+                 | usuário | registro | log in</span>
         </div>
     </div>
 
@@ -161,7 +219,7 @@
         <div class="receita-fav">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4NR1_BSUNt1W5HBtZ6KjMqatSPCGKYOnGAg&usqp=CAU">
             <h1>ESPECIALIDADE DO CHEFE</h1>
-            <h2>A Morte Dela (Bolo de Mortadela)</h2>
+            <h2><a href="receitas/mortadela.html">A Morte Dela (Bolo de Mortadela)</a></h2>
             <span>"Ah, o bolo de mortadela, uma criação que desafia os limites do razoável e das expectativas gastronômicas! Um enigma 
                 comestível que rompe com as convenções culinárias, misturando a simplicidade de um pão com a audácia da mortadela. 
                 Em sua mistura, vejo um convite ao desconhecido, uma jornada intrépida pelos caminhos inexplorados do sabor. Como a 
@@ -192,8 +250,14 @@
                 entre a genialidade e a insanidade. Talvez, em meio a essa audaciosa mistura, resida o segredo da eternidade 
                 ou, quem sabe, um novo capítulo na história gastronômica dos Buendía."</span>
         </div>
+        <p>꘎♡━━━━━♡꘎<br><br></p>
     </div>
-
+    <script>
+        document.getElementById('toggleReceitas').addEventListener('click', function() {
+        const menu = document.getElementById('receitas');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
 </body>
 
 </html>

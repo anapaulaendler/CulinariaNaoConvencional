@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollmops</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+
+        body {
+            background: #FFFBF5;
+            margin: 0px;
+            padding: 0px;
+            border: 0;
+            font-size: 15px;
+        }
+        #outer-wrapper {
+            width: 850px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        #header {
+            background-color: #674188;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            text-align:center;
+        }
+        h1, h2 {
+            font-family: 'Yeseva One', cursive;
+            color:#674188;
+        }
+        p, a, span {
+            color: #FFFBF5;
+            font-family: 'Josefin Sans', sans-serif;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        h1.prato {
+            font-size: 40px;
+            color:#674188;
+        }
+
+        #icon {
+            float:left;
+        }
+        #menuNav {
+            position: sticky;
+        }
+
+        .bordinha {
+            margin-top: 5%;
+            border-width: 7px;
+            border-radius: 4px;
+            border: 2px #674188 solid;
+        }
+
+        .itens {
+            background-color: #C3ACD0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        div.divisor {
+            background-color: #674188;
+            width: 100%;
+            height: 5px;
+            border-radius: 2px;
+        }
+
+        .abaixo {
+            color: #674188;
+            font-size: 20px;
+        }
+
+        .conteudo {
+            width: 500px;
+            text-align: left; 
+            margin: auto;
+            padding: 5px;
+            background-color: #C3ACD0;
+            border-radius: 4px;
+            line-height: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#674188;
+            font-size: 18px;
+        }
+
+        img.comentarios {
+            border-radius: 50%;
+            height: 70px;
+            float: left;
+        }
+
+        .icones {
+            float: inline-start;
+            height: 15px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        button {
+            text-decoration: none;
+            background-color: #674188;
+            border: none;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#FFFBF5;
+            font-size: 15px;
+        }
+
+        .receitas-container {
+        position: relative;
+        display: inline-block;
+        }
+
+        .receitas-button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 15px;
+        }
+
+        .receitas {
+        position: absolute;
+        display: none;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        background-color: #FFFBF5;
+        }
+
+        .receitas li {
+        margin-bottom: 10px;
+        }
+
+        .receitas a {
+        text-decoration: none;
+        color: #674188;
+        font-size: 15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <img style="float:left;height:100px;" src="https://i.postimg.cc/sxpN6vYp/logooo-Photo-Room-png-Photo-Room.png">
+        <h1 style="color:#FFFBF5;">PANELA SINGELA</h1>
+        <div id="menuNav">
+            <span>
+                <a style="color:#FFFBF5;" href="../index.html">página inicial</a> | 
+                <div class="receitas-container">
+                    <button id="toggleReceitas" class="receitas-button">receitas</button>
+                    <ul id="receitas" class="receitas">
+                      <li><a href="rollmops.html">Rollmops</a></li>
+                      <li><a href="mortadela.html">Mortadela</a></li>
+                      <li><a href="cabelo.html">Tempero Especial</a></li>
+                    </ul>
+                  </div>
+                | 
+                <a style="color:#FFFBF5;" href="../nossotime.html">nosso time</a>
+                 | usuário | registro | log in</span>
+        </div>
+    </div>
+
+    <div id="outer-wrapper">
+
+        <img class="bordinha" src="https://1.bp.blogspot.com/-_R8Wq-668b8/XbVjwNgxE0I/AAAAAAAAA5s/5avSjCjL7-cnLNDDy6KH5iIgyRpgoUwyACLcBGAsYHQ/s1600/Rollmops.png">
+
+        <h1 class="prato">ROLLMOPS</h1>
+
+            <div style="width: 370px; height: 70px; align-items: center; margin: auto;"> 
+                <div class="itens">
+                    <p style="font-family: 'Yeseva One';">
+                    <img class="icones" src="relogiopng.png">
+                    120 HORAS  
+                    <img class="icones" src="https://i.pinimg.com/originals/78/65/8d/78658d3b6047f1bbb27f8a45c62b0b0e.png">
+                    4,5/5  
+                    <img class="icones" src="caverapng.png">
+                    100%  
+                    </p>
+                </div>
+            </div>
+        <p style="color:#674188;">Por: Rebeca</p>
+        <div class="divisor"></div>
+        <h1 class="abaixo">INGREDIENTES:</h1>
+        <div class="conteudo">
+            <input type="checkbox" checked="checked">Vinagre de sua Preferência<br>
+            <input type="checkbox" checked="checked">Filés de Arenque<br>
+            <input type="checkbox" checked="checked">Pipinu ou Cebôla ou Azeitona<br>
+            <input type="checkbox" checked="checked">Palito do Dente para Segurar Tudo
+            
+        </div>
+        <div class="divisor" style="margin-top: 20px;"></div>    
+        <h1 class="abaixo">PASSO A PASSO</h1>
+        <div class="conteudo">
+            <p style="color:#674188;">1. Bote o filé de arenque em volta do pipinu ou cebôla ou azeitona.<br><br>
+
+                2. Use o palito de dente pra segura os ingredinhente.<br><br>
+
+                3. Bote no potão de vinagre e deixa.<br><br>
+                
+                4. Abra o pote e coma quando se sentir pronto pra tanto sabor!</p>
+        </div>
+        <p>꘎♡━━━━━♡꘎<br><br></p>
+    </div>
+
+        <script>
+            document.getElementById('toggleReceitas').addEventListener('click', function() {
+            const menu = document.getElementById('receitas');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+            });
+        </script>
+    </body>
+
+</html>
