@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nome do site???</title>
+
+    <style>
+
+body {
+            background: rgb(255, 251, 245);
+            margin: 0px;
+            padding: 0px;
+            border: 0;
+            font-size: 15px;
+        }
+        #outer-wrapper {
+            width: 850px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        #header {
+            background-color: #674188;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            text-align:center;
+        }
+        h1, h2 {
+            font-family: 'Yeseva One', cursive;
+            color:#674188;
+        }
+        p, a, span {
+            color: #FFFBF5;
+            font-family: 'Josefin Sans', sans-serif;
+            text-decoration: none;
+        }
+        h1.prato {
+            font-size: 40px;
+            color:#674188;
+        }
+
+        #icon {
+            float:left;
+        }
+        #menuNav {
+            position: sticky;
+        }
+
+        .bordinha {
+            margin-top: 5%;
+            border-width: 7px;
+            border-radius: 4px;
+            border: 2px #674188 solid;
+            width:500px;
+        }
+
+        .itens {
+            background-color: #C3ACD0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        div.divisor {
+            background-color: #674188;
+            width: 100%;
+            height: 5px;
+            border-radius: 2px;
+        }
+
+        .abaixo {
+            color: #674188;
+            font-size: 20px;
+        }
+
+        .conteudo {
+            width: 500px;
+            text-align: left; 
+            margin: auto;
+            padding: 5px;
+            background-color: #C3ACD0;
+            border-radius: 4px;
+            line-height: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#674188;
+            font-size: 18px;
+        }
+
+        img.comentarios {
+            border-radius: 50%;
+            height: 70px;
+            float: left;
+        }
+
+        .icones {
+            float: inline-start;
+            height: 15px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        button {
+            text-decoration: none;
+            background-color: #674188;
+            border: none;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#FFFBF5;
+            font-size: 15px;
+        }
+
+        .receitas-container {
+        position: relative;
+        display: inline-block;
+        }
+
+        .receitas-button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 15px;
+        }
+
+        .receitas {
+        position: absolute;
+        display: none;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        background-color: #FFFBF5;
+        }
+
+        .receitas li {
+        margin-bottom: 10px;
+        }
+
+        .receitas a {
+        text-decoration: none;
+        color: #674188;
+        font-size: 15px;
+        }
+
+        header {
+            background-color: #674188;
+            width: 100%;
+            height: 120px;
+            position: relative; 
+        }
+
+        .divlogo {
+            position: absolute; 
+            left: 20px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+        }
+
+        img.logo {
+            width: 400px;
+            height: auto;
+            position: absolute; 
+            left: -140px; 
+            transform: translateY(-50%); 
+        }
+
+        h1 {
+            margin: 0;
+            color: #FFFBF5;
+            line-height: 120px; 
+        }
+
+        nav {
+            background-color:#674188;
+            width: 100%;
+        }
+
+        nav a {
+            color:#FFFBF5;
+            text-decoration: none;
+            line-height: 50px;
+            margin: 0 10px;
+        }
+
+        .div5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .div6 {
+            margin-right: 10px;
+            margin-left: 10px;
+            background-color: #674188;
+            background-size: auto;
+            
+        }
+
+        .div7 {
+            margin-right: 10px;
+            margin-left: 10px;
+
+        }
+
+        img.fotita {
+            width: auto;
+            height: 250px;
+        }
+
+        img.seta {
+            width: 50px;
+        }
+
+        div.sobrenozes{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <img style="float:left;height:100px;" src="https://i.postimg.cc/sxpN6vYp/logooo-Photo-Room-png-Photo-Room.png">
+        <h1 style="color:#FFFBF5;">PANELA SINGELA</h1>
+        <div id="menuNav">
+            <span>
+                <a style="color:#FFFBF5;" href="../index.html">página inicial</a> | 
+                <div class="receitas-container">
+                    <button id="toggleReceitas" class="receitas-button">receitas</button>
+                    <ul id="receitas" class="receitas">
+                      <li><a href="rollmops.html">Rollmops</a></li>
+                      <li><a href="mortadela.html">Mortadela</a></li>
+                      <li><a href="cabelo.html">Tempero Especial</a></li>
+                      <li><a href="diarreia.html">Diarreia no Copo</a></li>
+                      <li><a href="picole.html">Picolé de Sopa</a></li>
+                      <li><a href="tangerina.html">Lamen Tangerina</a></li>
+                    </ul>
+                  </div>
+                | 
+                <a style="color:#FFFBF5;" href="../nossotime.html">nosso time</a>
+                 | usuário | registro | log in</span>
+        </div>
+    </div>
+
+<div class="div5">
+    <div class="div7">
+        <div class="div2">
+            <img class="fotita"
+                src="https://static.demilked.com/wp-content/uploads/2022/02/62172aae11039-cursed-foods-pics-62149cb11c410__700.jpg">
+        </div>
+    </div>
+</div>
+
+<div class="div5">
+    <img class="seta" src="https://cdn-icons-png.flaticon.com/512/1/1112.png">
+    <div class="div6">
+        <div class="div2">
+            <img class="fotita"
+                src="https://static.demilked.com/wp-content/uploads/2022/02/62172aae11039-cursed-foods-pics-62149cb11c410__700.jpg">
+        </div>
+    </div>
+    <img class="seta" src="https://i.pinimg.com/originals/3a/5a/47/3a5a47d3b92c53c060da34a2294453e3.png">
+</div>
+
+<div class = "sobrenozes">
+    <p>SOBRE NÓS: Temos o desejo de compartilhar com o mundo os ideais da culinaria não convencional, a saborosissima ideia de conhecer o exótico vai te cativar com nossos angustiantes sabores! (Oberservação, tudo isso é uma sátira, não consuma qualquer destes alimentos)</p>
+
+</div>
+
+</body>
+
+
+
+</html>
