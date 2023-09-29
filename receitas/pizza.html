@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suco Detox</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+
+        body {
+            background: #FFFBF5;
+            margin: 0px;
+            padding: 0px;
+            border: 0;
+            font-size: 15px;
+        }
+        #outer-wrapper {
+            width: 850px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        #header {
+            background-color: #674188;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            text-align:center;
+        }
+        h1, h2 {
+            font-family: 'Yeseva One', cursive;
+            color:#674188;
+        }
+        p, a, span {
+            color: #FFFBF5;
+            font-family: 'Josefin Sans', sans-serif;
+            text-decoration: none;
+        }
+        h1.prato {
+            font-size: 40px;
+            color:#674188;
+        }
+
+        #icon {
+            float:left;
+        }
+        #menuNav {
+            position: sticky;
+        }
+
+        .bordinha {
+            margin-top: 5%;
+            border-width: 7px;
+            border-radius: 4px;
+            border: 2px #674188 solid;
+            width:500px;
+        }
+
+        .itens {
+            background-color: #C3ACD0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        div.divisor {
+            background-color: #674188;
+            width: 100%;
+            height: 5px;
+            border-radius: 2px;
+        }
+
+        .abaixo {
+            color: #674188;
+            font-size: 20px;
+        }
+
+        .conteudo {
+            width: 500px;
+            text-align: left; 
+            margin: auto;
+            padding: 5px;
+            background-color: #C3ACD0;
+            border-radius: 4px;
+            line-height: 15px;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#674188;
+            font-size: 18px;
+        }
+
+        img.comentarios {
+            border-radius: 50%;
+            height: 70px;
+            float: left;
+        }
+
+        .icones {
+            float: inline-start;
+            height: 15px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        button {
+            text-decoration: none;
+            background-color: #674188;
+            border: none;
+            font-family: 'Josefin Sans', sans-serif;
+            color:#FFFBF5;
+            font-size: 15px;
+        }
+
+        .receitas-container {
+        position: relative;
+        display: inline-block;
+        }
+
+        .receitas-button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 15px;
+        }
+
+        .receitas {
+        position: absolute;
+        display: none;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        background-color: #FFFBF5;
+        }
+
+        .receitas li {
+        margin-bottom: 10px;
+        }
+
+        .receitas a {
+        text-decoration: none;
+        color: #674188;
+        font-size: 15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <img style="float:left;height:100px;" src="https://i.postimg.cc/sxpN6vYp/logooo-Photo-Room-png-Photo-Room.png">
+        <h1 style="color:#FFFBF5;">PANELA SINGELA</h1>
+        <div id="menuNav">
+            <span>
+                <a style="color:#FFFBF5;" href="../index.html">página inicial</a> | 
+                <div class="receitas-container">
+                    <button id="toggleReceitas" class="receitas-button">receitas</button>
+                    <ul id="receitas" class="receitas">
+                      <li><a href="rollmops.html">Rollmops</a></li>
+                      <li><a href="mortadela.html">Mortadela</a></li>
+                      <li><a href="cabelo.html">Tempero Especial</a></li>
+                      <li><a href="diarreia.html">Diarreia no Copo</a></li>
+                      <li><a href="picole.html">Picolé de Sopa</a></li>
+                      <li><a href="tangerina.html">Lamen Tangerina</a></li>
+                      <li><a href="pizzatopotudo.html">Pizza Topo Tudo</a></li>
+                    </ul>
+                  </div>
+                | 
+                <a style="color:#FFFBF5;" href="../nossotime.html">nosso time</a>
+                 | usuário | registro | log in</span>
+        </div>
+    </div>
+
+    <div id="outer-wrapper">
+
+        <img class="bordinha" src="https://i.pinimg.com/originals/3c/c7/bc/3cc7bc0feaa6c4efb39dc35dd2a96d81.jpg">
+
+        <h1 class="prato">Pizza Topo Tudo</h1>
+
+            <div style="width: 370px; height: 70px; align-items: center; margin: auto;"> 
+                <div class="itens">
+                        <p style="font-family: 'Yeseva One';">
+                            <img class="icones" src="https://i.pinimg.com/originals/bc/fe/21/bcfe21cd68c1f06f8ac8cf273f0d0bd6.png">
+                            35 - 40 min  
+                            <img class="icones" src="https://www.svgrepo.com//show/3287/stars.svg">
+                            4,3/5  
+                            <img class="icones" src="https://www.freeiconspng.com/thumbs/skull-icon/healthcare-skull-icon-5.png">
+                            100%
+                            </p>
+                </div>
+            </div>
+
+        <p style="color:#674188;">Por: José Arcadio Buendía</p>
+
+        <div class="divisor"></div>
+
+        <h1 class="abaixo">INGREDIENTES:</h1>
+
+        <div class="conteudo">
+            <input type="checkbox" checked="checked">Massa pronta de pizza<br>
+            <input type="checkbox" checked="checked">Sobras da geladeira (Doces e Salgados) <br>
+            <input type="checkbox" checked="checked">Mussarela<br> 
+            
+        </div>
+
+        <div class="divisor" style="margin-top: 20px;"></div>
+        
+        <h1 class="abaixo">PASSO A PASSO</h1>
+
+        <div class="conteudo">
+            <p style="color:#674188;">Pré asse a massa da pizza por 5 minutos a 180 graus Celsius. Acrecente os diversos recheios (Recomendamos cascas e dejetos de alimentos). Asse por 30 minutos e, por fim, acrescente a mussarela.<br>
+            </p>
+        </div>
+        <p>꘎♡━━━━━♡꘎<br><br></p>
+        </div>
+
+        <script>
+            document.getElementById('toggleReceitas').addEventListener('click', function() {
+            const menu = document.getElementById('receitas');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+            });
+        </script>
+
+</body>
+
+</html>
