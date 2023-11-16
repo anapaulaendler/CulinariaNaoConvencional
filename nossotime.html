@@ -11,13 +11,17 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
 
+        
         body {
             background: #FFFBF5;
             margin: 0px;
             padding: 0px;
             border: 0;
             font-size: 15px;
-        }
+            opacity: 0;
+            transition: opacity 2s;
+            -webkit-transition: opacity 2s; /* Safari */
+        } 
 
         #outer-wrapper {
             width: 850px;
@@ -152,7 +156,8 @@
     </style>
 </head>
 
-<body>
+<body onload="document.body.style.opacity='1'">
+
 
     <div id="header">
         <img style="float:left;height:100px;" src="https://i.postimg.cc/sxpN6vYp/logooo-Photo-Room-png-Photo-Room.png">
