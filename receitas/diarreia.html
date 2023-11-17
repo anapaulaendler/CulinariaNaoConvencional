@@ -11,13 +11,18 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
 
+        
         body {
             background: #FFFBF5;
             margin: 0px;
             padding: 0px;
             border: 0;
             font-size: 15px;
-        }
+            opacity: 0;
+            transition: opacity 2s;
+            -webkit-transition: opacity 2s; /* Safari */
+        } 
+        
         #outer-wrapper {
             width: 850px;
             margin: 0 auto;
@@ -25,12 +30,17 @@
             text-align: center;
         }
         #header {
-            background-color: #674188;
-            position: sticky;
-            top: 0;
-            padding: 10px;
-            text-align:center;
+        background-color: #674188;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        z-index: 1000;
+    
         }
+        
         h1, h2 {
             font-family: 'Yeseva One', cursive;
             color:#674188;
@@ -53,11 +63,10 @@
         }
 
         .bordinha {
-            margin-top: 5%;
+            margin-top: 20%;
             border-width: 7px;
             border-radius: 4px;
             border: 2px #674188 solid;
-            width:500px;
         }
 
         .itens {
@@ -147,27 +156,26 @@
     </style>
 </head>
 
-<body>
-
+<body onload="document.body.style.opacity='1'">
+    
     <div id="header">
         <img style="float:left;height:100px;" src="https://i.postimg.cc/sxpN6vYp/logooo-Photo-Room-png-Photo-Room.png">
         <h1 style="color:#FFFBF5;">PANELA SINGELA</h1>
         <div id="menuNav">
             <span>
-                <a style="color:#FFFBF5;" href="../index.html">página inicial</a> | 
+                <a style="color:#FFFBF5;" href="index.html">página inicial</a> | 
                 <div class="receitas-container">
                     <button id="toggleReceitas" class="receitas-button">receitas</button>
                     <ul id="receitas" class="receitas">
-                      <li><a href="rollmops.html">Rollmops</a></li>
-                      <li><a href="mortadela.html">Mortadela</a></li>
-                      <li><a href="cabelo.html">Tempero Especial</a></li>
-                      <li><a href="diarreia.html">Diarreia no Copo</a></li>
-                      <li><a href="picole.html">Picolé de Sopa</a></li>
+                      <li><a href="receitas/rollmops.html">Rollmops</a></li>
+                      <li><a href="receitas/mortadela.html">Mortadela</a></li>
+                      <li><a href="receitas/cabelo.html">Tempero Especial</a></li>
+                      <li><a href="receitas/diarreia.html">Diarreia no Copo</a></li>
+                      <li><a href="receitas/picole.html">Picolé de Sopa</a></li>
                     </ul>
                   </div>
                 | 
-                <a style="color:#FFFBF5;" href="../nossotime.html">nosso time</a>
-                 | usuário | registro | log in</span>
+                <a style="color:#FFFBF5;" href="nossotime.html">nosso time</a></span>
         </div>
     </div>
 
